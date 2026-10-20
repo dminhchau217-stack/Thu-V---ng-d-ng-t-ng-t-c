@@ -152,7 +152,7 @@ for name, pct in layers.items():
     st.write(f"{name}: {pct:.3f}%")
 
 if not errors:
-    st.success("Công thức hợp lệ về mặt toán học.")
+    st.success("Hợp lệ toán học không đồng nghĩa an toàn. Cần giáo viên duyệt.")
     st.download_button(
         "Tải CSV",
         data=df.to_csv(index=False).encode("utf-8-sig"),
